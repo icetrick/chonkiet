@@ -24,7 +24,7 @@ RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir .[api,semantic,code,openai,catsu]
+    pip install --no-cache-dir .[api,all]
 
 # ---------------------------------------------------------------------------
 # Stage 2 – runtime
